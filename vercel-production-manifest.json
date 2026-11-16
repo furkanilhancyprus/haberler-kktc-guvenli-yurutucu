@@ -1,0 +1,1106 @@
+{
+  "project": "prj_N2mtfK6AT8s66MgzFln1C0mvBY1v",
+  "deployment": "dpl_9bkqh6PgDnytkk3m37bfFRVfDi7C",
+  "files": [
+    {
+      "file": "api/media.py",
+      "sha": "69207030a21c330ac87ff76c0d27f39d1c7889d3"
+    },
+    {
+      "file": "media_service/__init__.py",
+      "sha": "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc"
+    },
+    {
+      "file": "media_service/images.py",
+      "sha": "7f247bce096c6dd995cdf0feda0ac589c0187694"
+    },
+    {
+      "file": "media_service/providers.py",
+      "sha": "b8e4dfd0549fb03e94981740253f578361923076"
+    },
+    {
+      "file": "media_service/service.py",
+      "sha": "bb0a0630a07c4609d54aad915d4627d552035ed0"
+    },
+    {
+      "file": "media_service/store.py",
+      "sha": "e93f059c99e77489c396a061bb5cfada540f79ef"
+    },
+    {
+      "file": "public/assets/home-editorial.css",
+      "sha": "53d640a7b757eccb49f14badd0c6bcc434f850dc"
+    },
+    {
+      "file": "public/assets/home.js",
+      "sha": "18bfa51b84ed4d2060d02e00854136aefac3f71d"
+    },
+    {
+      "file": "public/assets/news-0.jpg",
+      "sha": "a5c0f3f346ec725669d47fb5f70e4130d7bd0399"
+    },
+    {
+      "file": "public/assets/news-1.jpg",
+      "sha": "fecf35a7de0d08da7314bbd0de11cfda1f4084cf"
+    },
+    {
+      "file": "public/assets/news-10.jpg",
+      "sha": "973ac9176d6db27670e8cb89525b26c53daa94d3"
+    },
+    {
+      "file": "public/assets/news-11.jpg",
+      "sha": "bae6b4896fbdaf95a05f149a7ddd68dbe6ddc893"
+    },
+    {
+      "file": "public/assets/news-12.jpg",
+      "sha": "c54260c5b3a4872fe43c16ea52d9d3eba8e88637"
+    },
+    {
+      "file": "public/assets/news-13.jpg",
+      "sha": "b9641d354e2c7fc0e500c77ddbb5ef3fae2b9066"
+    },
+    {
+      "file": "public/assets/news-14.jpg",
+      "sha": "3ade0ce32ae00ac632aaf20429331e4c63669cff"
+    },
+    {
+      "file": "public/assets/news-15.jpg",
+      "sha": "6abd65e1aa0cac7f7ea67f26436c719f53c73972"
+    },
+    {
+      "file": "public/assets/news-1554567046690523.jpg",
+      "sha": "1bb39005a31590a8d6452b201bea83162bdfefb1"
+    },
+    {
+      "file": "public/assets/news-1554580006689227.jpg",
+      "sha": "3847d5d54a9bd8adc56e149e3321209b91f7bf8e"
+    },
+    {
+      "file": "public/assets/news-1554597163354178.jpg",
+      "sha": "4cd812d1b704d17d0776118a67eb541fb2d4ef55"
+    },
+    {
+      "file": "public/assets/news-1554615850018976.jpg",
+      "sha": "75f8242eb9da066529a958aef48eb328a2c74a4e"
+    },
+    {
+      "file": "public/assets/news-1554627930017768.jpg",
+      "sha": "225284302240616ee521235bb2a7b89a1f8a87ef"
+    },
+    {
+      "file": "public/assets/news-1554637780016783.jpg",
+      "sha": "be4bd0642a8a1a8b77ee35040e0d5ba2dbb84627"
+    },
+    {
+      "file": "public/assets/news-1554654393348455.jpg",
+      "sha": "d5d28a48f1642f23c3cd53f6b3c8a7cd462ae925"
+    },
+    {
+      "file": "public/assets/news-1554674700013091.jpg",
+      "sha": "d770239437c944d20f57e4bf1cdcde448886ac73"
+    },
+    {
+      "file": "public/assets/news-1554677590012802.jpg",
+      "sha": "d426707763f5fc6a3c055fc318764a88a03859a3"
+    },
+    {
+      "file": "public/assets/news-1554680006679227.jpg",
+      "sha": "a9ad631e833e254e18f623f73149255c74c8b907"
+    },
+    {
+      "file": "public/assets/news-1554682520012309.jpg",
+      "sha": "d7b7ff6550cdd501c85be5b8874a3eae9ee5da09"
+    },
+    {
+      "file": "public/assets/news-1554685500012011.jpg",
+      "sha": "b1c7f351e8d6d2d25cc94b544459164c7bf62941"
+    },
+    {
+      "file": "public/assets/news-1554702880010273.jpg",
+      "sha": "20a8cbb3d2cfdeee77019f5b5f563f04a4020a07"
+    },
+    {
+      "file": "public/assets/news-1554712343342660.jpg",
+      "sha": "15460c59b28fc5307fde318dcf2810f9394b86d1"
+    },
+    {
+      "file": "public/assets/news-1554719990008562.jpg",
+      "sha": "763059d65153e653eaf24bd58064a3b0a9f492ba"
+    },
+    {
+      "file": "public/assets/news-1554739456673282.jpg",
+      "sha": "a5177b186975287b7842826cdd6665ea2cd73331"
+    },
+    {
+      "file": "public/assets/news-1554795040001057.jpg",
+      "sha": "f9be39331a87fa00e73ff279b2cd134e47d41a7c"
+    },
+    {
+      "file": "public/assets/news-1554815639998997.webp",
+      "sha": "9c89862c1c66ff749f051d4e005a64962867d224"
+    },
+    {
+      "file": "public/assets/news-1554822959998265.webp",
+      "sha": "32f70abda0a6f619d573cfbf4ded7a5f1430c553"
+    },
+    {
+      "file": "public/assets/news-1554851256662102.jpg",
+      "sha": "3b71ef5ff78ec2e7717a2eb46e2694aaab29310e"
+    },
+    {
+      "file": "public/assets/news-1554862199994341.webp",
+      "sha": "7859b1060e063771661413ef9c93718bc1a5b183"
+    },
+    {
+      "file": "public/assets/news-1554882439992317.jpg",
+      "sha": "690ac23529d7a3672fcc66a3ff8cdd18d7fee6dc"
+    },
+    {
+      "file": "public/assets/news-1554907529989808.jpg",
+      "sha": "8b2b4135e33afa65c38522d95ae72e22bc7fd5e4"
+    },
+    {
+      "file": "public/assets/news-1554913486655879.jpg",
+      "sha": "a29692e02fdf23e4fd83ddee7f5528ff33bb9153"
+    },
+    {
+      "file": "public/assets/news-1554919123321982.jpg",
+      "sha": "ec6052f35857c22e9a7a470a3a2d93aa5c7e9a9e"
+    },
+    {
+      "file": "public/assets/news-1554921816655046.jpg",
+      "sha": "f48e57d4e77488bbe37007562157232df789dcb8"
+    },
+    {
+      "file": "public/assets/news-1554943193319575.jpg",
+      "sha": "667022f1985e9dea85d76823a085b0955f609c63"
+    },
+    {
+      "file": "public/assets/news-1554955703318324.jpg",
+      "sha": "edab40bd6d2cb75b304764d739f4fb72808d3466"
+    },
+    {
+      "file": "public/assets/news-1554972813316613.jpg",
+      "sha": "e7f94752ff3f40917915161b6f6336b7921557ac"
+    },
+    {
+      "file": "public/assets/news-1554973083316586.jpg",
+      "sha": "891253902e4321af21def143d513e1bcfc24a9a3"
+    },
+    {
+      "file": "public/assets/news-1554993173314577.jpg",
+      "sha": "900b52412bd37a2952c68f454f42f1098d2e6ec2"
+    },
+    {
+      "file": "public/assets/news-1555018599978701.jpg",
+      "sha": "50e79e1fc690fd2b9d5b8aa8010d6eb46ba2a193"
+    },
+    {
+      "file": "public/assets/news-1555049736642254.jpg",
+      "sha": "4de0b6680b2129b254d9f2cb2dc462a97d398fec"
+    },
+    {
+      "file": "public/assets/news-1555067329973828.jpg",
+      "sha": "96a86429f7c1defb636280c627cc3e159546502b"
+    },
+    {
+      "file": "public/assets/news-1555078963305998.jpg",
+      "sha": "d2ad6518d98ca9054a676908aa5f1448aa6dc743"
+    },
+    {
+      "file": "public/assets/news-1555087039971857.jpg",
+      "sha": "b950c9c2126e9e68b875248ded7ffff0efec0688"
+    },
+    {
+      "file": "public/assets/news-1555104589970102.jpg",
+      "sha": "81ab3f56f491e6037f67eeb6d769644a4e88f580"
+    },
+    {
+      "file": "public/assets/news-1555107746636453.jpg",
+      "sha": "ff93f36cf9b4645c9526713c710650733c40e7b7"
+    },
+    {
+      "file": "public/assets/news-1555131419967419.jpg",
+      "sha": "d67b29d670eedd64c0a15ed6fe49f8927c1229b7"
+    },
+    {
+      "file": "public/assets/news-1555394823274412.jpg",
+      "sha": "f07296c77c28028158903411107c675c9395c5ae"
+    },
+    {
+      "file": "public/assets/news-1555441263269768.jpg",
+      "sha": "894b63e22680245267229805dbb5ebb3d14ff1a7"
+    },
+    {
+      "file": "public/assets/news-1555656323248262.jpg",
+      "sha": "1fa8036dd70360c03f5e96fa0e0cb5049763d799"
+    },
+    {
+      "file": "public/assets/news-1555676906579537.jpg",
+      "sha": "af65a87a5f61770a3b08723216528dce29922e6f"
+    },
+    {
+      "file": "public/assets/news-1555680959912465.jpg",
+      "sha": "4d92ff7befea959a92906ab0db5675578cebf570"
+    },
+    {
+      "file": "public/assets/news-1555710206576207.jpg",
+      "sha": "1b33896d11382dfcd34c4772312a8fb357843391"
+    },
+    {
+      "file": "public/assets/news-1555731666574061.jpg",
+      "sha": "dd15c8b283a399acfcf2a0dd9738f5636b3fae0a"
+    },
+    {
+      "file": "public/assets/news-1555758936571334.jpg",
+      "sha": "008a4a6972347b6986750a6d42de4ce7431128c4"
+    },
+    {
+      "file": "public/assets/news-1555761493237745.jpg",
+      "sha": "1f2e7d46310aeeaa9b64b6a0ece4b320da01c996"
+    },
+    {
+      "file": "public/assets/news-1555784046568823.jpg",
+      "sha": "8c437953df5ceaee83b764656cd2b18d1a68e31d"
+    },
+    {
+      "file": "public/assets/news-1555839916563236.jpg",
+      "sha": "c66296a9a57fbd450b053b0d543ad2fce4b344e5"
+    },
+    {
+      "file": "public/assets/news-1555856399894921.jpg",
+      "sha": "89752818814f3e017c362624802ebc171a7d3069"
+    },
+    {
+      "file": "public/assets/news-1555868299893731.jpg",
+      "sha": "873e3ffa41248759215e6c1b9565115883a6c27c"
+    },
+    {
+      "file": "public/assets/news-1555895129891048.jpg",
+      "sha": "7e8f18f1374e60827b2c64d92ee9bbe4f2212599"
+    },
+    {
+      "file": "public/assets/news-1555923036554924.jpg",
+      "sha": "ae32f762e18325a202db70a97ab9807524a304f5"
+    },
+    {
+      "file": "public/assets/news-1555954393218455.jpg",
+      "sha": "964bc1f358c3b1aa8ab95dc967b3b5a1398eb29d"
+    },
+    {
+      "file": "public/assets/news-1555959263217968.jpg",
+      "sha": "e82add5289f27fc81460dd7a665f5fede98699a5"
+    },
+    {
+      "file": "public/assets/news-1555968179883743.jpg",
+      "sha": "a714d90959998d620ea74f5616e866eb27844776"
+    },
+    {
+      "file": "public/assets/news-1555974813216413.jpg",
+      "sha": "030b473c537db67c106a484c16a3907242522fcf"
+    },
+    {
+      "file": "public/assets/news-1555987246548503.jpg",
+      "sha": "0822b1f4aad04ecb84f73dd5de0c0bb13fffc4ae"
+    },
+    {
+      "file": "public/assets/news-1556031203210774.jpg",
+      "sha": "58ee6a5c2f6fdf152bf76fae36e15002d4205f21"
+    },
+    {
+      "file": "public/assets/news-1556057519874809.jpg",
+      "sha": "0744bb38a4e1e18437520c5a820d8156f92aac97"
+    },
+    {
+      "file": "public/assets/news-1556069126540315.jpg",
+      "sha": "90c74822c172627479018b278ca162e5cfaa3ab0"
+    },
+    {
+      "file": "public/assets/news-1556102086537019.jpg",
+      "sha": "c5d90b684bc99994ac90f073d78d1679c5e66a41"
+    },
+    {
+      "file": "public/assets/news-1556127193201175.jpg",
+      "sha": "bab75c4e5efde369075d8043903089aae283165e"
+    },
+    {
+      "file": "public/assets/news-1556143029866258.jpg",
+      "sha": "5fe090257744c56724b947ad05831ec7bb91619f"
+    },
+    {
+      "file": "public/assets/news-1556149549865606.jpg",
+      "sha": "85fedccb8e245deb2a8953c411e48dc41b7c0f23"
+    },
+    {
+      "file": "public/assets/news-1556157916531436.jpg",
+      "sha": "6124373efd5d0555a11f9fa4b1ae620649a2e693"
+    },
+    {
+      "file": "public/assets/news-1556214089859152.jpg",
+      "sha": "37b87262bbbba42c274c05fa863439c13878688d"
+    },
+    {
+      "file": "public/assets/news-1556605996486628.jpg",
+      "sha": "73331d4577d882df2ab91fcc04ac1ec3f6ee7264"
+    },
+    {
+      "file": "public/assets/news-1556615703152324.jpg",
+      "sha": "b8029df4f4577c07427d4aa4fa449b24947222f2"
+    },
+    {
+      "file": "public/assets/news-1556630446484183.jpg",
+      "sha": "a8992e83205e8c40d0cd74f8eb4b14dc51612e08"
+    },
+    {
+      "file": "public/assets/news-1556640149816546.jpg",
+      "sha": "591955d46f5c4634f39f74856aa3835f58815d26"
+    },
+    {
+      "file": "public/assets/news-1556654543148440.jpg",
+      "sha": "4c9ed26d708715832f02e55f24759177dcce7c6e"
+    },
+    {
+      "file": "public/assets/news-1556663736480854.jpg",
+      "sha": "fb10b70d7a9452bd77fdcba0f0a451a5eb720e23"
+    },
+    {
+      "file": "public/assets/news-1556695926477635.jpg",
+      "sha": "31c7f6b3e928e73de7373e51a0607f7be50d5e2f"
+    },
+    {
+      "file": "public/assets/news-1556703486476879.jpg",
+      "sha": "31fab54d7d57ae67f47d9fa8d35d1cf81a6eae53"
+    },
+    {
+      "file": "public/assets/news-1556717439808817.jpg",
+      "sha": "8ce5d1a57d97f2a6990f0b88490a38bdeb96ae03"
+    },
+    {
+      "file": "public/assets/news-1556726679807893.jpg",
+      "sha": "cd02e4a17dbe4bac5053362974ee7d3231e3660d"
+    },
+    {
+      "file": "public/assets/news-1556742996472928.jpg",
+      "sha": "1221f83adda6a2011cac4e322b055d062fda1956"
+    },
+    {
+      "file": "public/assets/news-1556751693138725.jpg",
+      "sha": "9924da544eae027c9a6d3d8e70b4462225d9e9a5"
+    },
+    {
+      "file": "public/assets/news-1556766686470559.jpg",
+      "sha": "079edac403876895a376d2e0b2cf27d7a487bbb0"
+    },
+    {
+      "file": "public/assets/news-1556768666470361.jpg",
+      "sha": "1d514721e985105609cea4b4315497e3e1aea22b"
+    },
+    {
+      "file": "public/assets/news-1556788976468330.jpg",
+      "sha": "92013d5a3c6880c06683a0dd01bcc8b2c0cebb33"
+    },
+    {
+      "file": "public/assets/news-1556792486467979.jpg",
+      "sha": "c3382d2f1bbe91b88c4821460e7f843b322725fc"
+    },
+    {
+      "file": "public/assets/news-1556813196465908.jpg",
+      "sha": "30954b596c2c31873cc7424f785515f136e56e72"
+    },
+    {
+      "file": "public/assets/news-1556834123130482.jpg",
+      "sha": "2191231be3fedfc744e9746a49feb1e7f91cf95f"
+    },
+    {
+      "file": "public/assets/news-1556837779796783.jpg",
+      "sha": "889b7e7e65df70feb98d5513337bd5eef68bb282"
+    },
+    {
+      "file": "public/assets/news-1556876086459619.jpg",
+      "sha": "2354efda1beef821bb228f415eefd9752b30d1f0"
+    },
+    {
+      "file": "public/assets/news-1556898039790757.jpg",
+      "sha": "bdae35b6afd66f2a9394f9e895c8f2592a7122d2"
+    },
+    {
+      "file": "public/assets/news-1556899693123925.jpg",
+      "sha": "dfafff6d31398b2d8fcb09dd7fe1bc54d3c1b8fb"
+    },
+    {
+      "file": "public/assets/news-1556932306453997.jpg",
+      "sha": "54bb19ea73fa48c2e36cc39eb64782a7ed6eacaf"
+    },
+    {
+      "file": "public/assets/news-1556992679781293.jpg",
+      "sha": "5452d9ed9d85fc7a8bad70a1372280d18d372086"
+    },
+    {
+      "file": "public/assets/news-1557142343099660.jpg",
+      "sha": "3d490402d4a61610d99f982a2202a47e317340e7"
+    },
+    {
+      "file": "public/assets/news-1557168866430341.jpg",
+      "sha": "997df6c6d71ad2b2d7c7b035e5bccda799fa2e12"
+    },
+    {
+      "file": "public/assets/news-1557266826420545.jpg",
+      "sha": "f81e9bd50a75e4e7e14e7653e1311618ca6f9e00"
+    },
+    {
+      "file": "public/assets/news-1557295356417692.jpg",
+      "sha": "fb7b3aae45746585b491650ab60a48adaa729d70"
+    },
+    {
+      "file": "public/assets/news-1557333826413845.jpg",
+      "sha": "d09adc473fff001d1590c840774259370270444a"
+    },
+    {
+      "file": "public/assets/news-1557359359744625.jpg",
+      "sha": "5e1ff5fd3b0cf8e5ca711a2fc9cc3a57caa290d3"
+    },
+    {
+      "file": "public/assets/news-1557367826410445.jpg",
+      "sha": "23f585df1cda8d1f432af95b9dc57bcd3eedd545"
+    },
+    {
+      "file": "public/assets/news-1557382013075693.jpg",
+      "sha": "5b1175186d2ada66047160300051c3e4fee9153d"
+    },
+    {
+      "file": "public/assets/news-1557416209738940.jpg",
+      "sha": "de31df62132bfc57b213483b61790f4f640afb9c"
+    },
+    {
+      "file": "public/assets/news-1557454223068472.jpg",
+      "sha": "fd253d148f8d2ed5a2b2f176259234dbf851bb11"
+    },
+    {
+      "file": "public/assets/news-1557454366401791.jpg",
+      "sha": "6d58cca3155889c025a5d90676b53342ce727285"
+    },
+    {
+      "file": "public/assets/news-1557548896392338.jpg",
+      "sha": "0108987a9e901df968e361c0cc488ee48274a26e"
+    },
+    {
+      "file": "public/assets/news-1557577936389434.jpg",
+      "sha": "211a9df305cec04702b3c819c7f3e4f4ecfa2334"
+    },
+    {
+      "file": "public/assets/news-1557799566367271.jpg",
+      "sha": "08698e45a117a94cb3a67044488c4502ae731163"
+    },
+    {
+      "file": "public/assets/news-1557854146361813.jpg",
+      "sha": "d02e0f678cc857ff06b54faa1c720d3ffe9a8671"
+    },
+    {
+      "file": "public/assets/news-1557880059692555.jpg",
+      "sha": "25676750490a9c9c7797ecfa29e3987567c92966"
+    },
+    {
+      "file": "public/assets/news-1557903049690256.jpg",
+      "sha": "97bcd5f6035aa9712859d1dd858bb32982d0eff2"
+    },
+    {
+      "file": "public/assets/news-1557922819688279.jpg",
+      "sha": "565a21d4c69351032f2ea9ec343c6854f042f12e"
+    },
+    {
+      "file": "public/assets/news-2.jpg",
+      "sha": "b4f5f91a0c7ab4fcbda1d5067924e6aac75ac09c"
+    },
+    {
+      "file": "public/assets/news-3.jpg",
+      "sha": "d47b966f216bbd16bc35a55d1f24092abfe50e6f"
+    },
+    {
+      "file": "public/assets/news-4.jpg",
+      "sha": "c0dbd6d2da85af6947e13f8bb3438cc5737786c5"
+    },
+    {
+      "file": "public/assets/news-5.jpg",
+      "sha": "a4409221090b8f75438886199ccf87f846759788"
+    },
+    {
+      "file": "public/assets/news-6.jpg",
+      "sha": "cce5082ae009a877a85db0e94d41d22792940005"
+    },
+    {
+      "file": "public/assets/news-7.jpg",
+      "sha": "95ba8d4624ad0adfad57d98c5eac61d8a1771fdf"
+    },
+    {
+      "file": "public/assets/news-8.jpg",
+      "sha": "5af6db2a7163fb5458846c6d00a963c09e44d62f"
+    },
+    {
+      "file": "public/assets/news-9.jpg",
+      "sha": "c5aec642397a838ec154ba7dbf07ae7be7d4a71b"
+    },
+    {
+      "file": "public/assets/search.js",
+      "sha": "8d9eac7818358f23ef5b067008618fda1f2c7253"
+    },
+    {
+      "file": "public/assets/site.css",
+      "sha": "cf7d1534f32501f2d3727ee021635ad907f86e22"
+    },
+    {
+      "file": "public/haber-1552292986917929.html",
+      "sha": "987b0218702f96dd622a25f3a9f0cfd283ed6444"
+    },
+    {
+      "file": "public/haber-1552622570218304.html",
+      "sha": "7055d13693aa632254ba45c4a662a518aabc24ed"
+    },
+    {
+      "file": "public/haber-1553178263496068.html",
+      "sha": "5bf67f372a8485ca4895d4b3f86facdf4a585500"
+    },
+    {
+      "file": "public/haber-1553374226809805.html",
+      "sha": "19a60ac7ff9a44ac24b355b159a6fd1092475c6f"
+    },
+    {
+      "file": "public/haber-1553406636806564.html",
+      "sha": "2e7ea1e88bdd48553b723561dd57be5e9bf9b743"
+    },
+    {
+      "file": "public/haber-1553512240129337.html",
+      "sha": "0fc090bd45a0df7c1b2ddf35755fce28c1a98745"
+    },
+    {
+      "file": "public/haber-1553548556792372.html",
+      "sha": "c253cfeb969f1c3e7348289e5c36355486944b32"
+    },
+    {
+      "file": "public/haber-1553643373449557.html",
+      "sha": "64ec652bece4d0a5c7fd34e7be78e5341e330cde"
+    },
+    {
+      "file": "public/haber-1553655940114967.html",
+      "sha": "eb8d4969d6bcf61746f6941eed46cff9959a9149"
+    },
+    {
+      "file": "public/haber-1553660373447857.html",
+      "sha": "ee40cd0e2e8ff20a728d238530726a18b390e4ec"
+    },
+    {
+      "file": "public/haber-1553787370101824.html",
+      "sha": "866afc435966fa888c68d97813895e7cd081e175"
+    },
+    {
+      "file": "public/haber-1553804760100085.html",
+      "sha": "1eaf16c6da41741eaface4cdf1ff581882930fd7"
+    },
+    {
+      "file": "public/haber-1553816300098931.html",
+      "sha": "9af8ca0680a7d2eb07b50d72bd5b25f9cb38d381"
+    },
+    {
+      "file": "public/haber-1553824163431478.html",
+      "sha": "993aeae9508d96d7ccb9f0ed2ff7aa353de5d743"
+    },
+    {
+      "file": "public/haber-1553826030097958.html",
+      "sha": "ab01b4acd6ce088ff3f8a2d75c070da589be3f18"
+    },
+    {
+      "file": "public/haber-1553831040097457.html",
+      "sha": "f0c471d58be209678a9963b9c37e459e0eb4bdb5"
+    },
+    {
+      "file": "public/haber-1554567046690523.html",
+      "sha": "9c3fb9058eb36140f1ddb3b23ae10c02b1dd33da"
+    },
+    {
+      "file": "public/haber-1554580006689227.html",
+      "sha": "56b4c1fbf10632d82255e73c8098feaa3d9bd443"
+    },
+    {
+      "file": "public/haber-1554597163354178.html",
+      "sha": "c49f48528327cd3e588125c4874933c660db7f6f"
+    },
+    {
+      "file": "public/haber-1554615850018976.html",
+      "sha": "a304cb89661f7aee5dae5102f587d5e3e0957106"
+    },
+    {
+      "file": "public/haber-1554627930017768.html",
+      "sha": "169644e9bb9f1e57cbd7782dbecb22cd8785836f"
+    },
+    {
+      "file": "public/haber-1554637780016783.html",
+      "sha": "896a363e9df3615d3ea3d83f229904c142b02d13"
+    },
+    {
+      "file": "public/haber-1554654393348455.html",
+      "sha": "f064e1571f6b82e7d6a7f70df41b66d052dcdde7"
+    },
+    {
+      "file": "public/haber-1554674700013091.html",
+      "sha": "f1f296d98e0231d737c4dc5b9a75b04da2930cf1"
+    },
+    {
+      "file": "public/haber-1554677590012802.html",
+      "sha": "a406f0cca08c4257c340fb6e0607db8f422fdfff"
+    },
+    {
+      "file": "public/haber-1554680006679227.html",
+      "sha": "e292ab7106d491ead066d6f3096934c01298c5f3"
+    },
+    {
+      "file": "public/haber-1554682520012309.html",
+      "sha": "2a25ea425fd25740d053141b46aaf0471505e24e"
+    },
+    {
+      "file": "public/haber-1554685500012011.html",
+      "sha": "9f7dbb2b12a486f09625554c160f14fd9f9af937"
+    },
+    {
+      "file": "public/haber-1554702880010273.html",
+      "sha": "0e233e545ab21732f424dfee6ab716e2a3dc301f"
+    },
+    {
+      "file": "public/haber-1554712343342660.html",
+      "sha": "8d7ec9a67eb931ca5e5d0cf21e09f43dfd4b19a3"
+    },
+    {
+      "file": "public/haber-1554719990008562.html",
+      "sha": "3e5b4bc70d8068a95d58922ab1637d849f956688"
+    },
+    {
+      "file": "public/haber-1554739456673282.html",
+      "sha": "337b7d9674ec73a0065dc7185c367271057b0eb4"
+    },
+    {
+      "file": "public/haber-1554795040001057.html",
+      "sha": "3b07a2fc24beca1dcafa01ad8731d6f445958e49"
+    },
+    {
+      "file": "public/haber-1554815639998997.html",
+      "sha": "d9cc356d6a99e86b435825eaa3c8b3c7287f16d9"
+    },
+    {
+      "file": "public/haber-1554822959998265.html",
+      "sha": "02175b63799404d6bf7ba0c2e3a1ba71fcd5dcdb"
+    },
+    {
+      "file": "public/haber-1554851256662102.html",
+      "sha": "7f1464b08cd4abba674abe0f83cfbb1b54b89f13"
+    },
+    {
+      "file": "public/haber-1554862199994341.html",
+      "sha": "021a164baacf38d7f9b9a6bd557bd8c92072be46"
+    },
+    {
+      "file": "public/haber-1554882439992317.html",
+      "sha": "13c85b361ce72f3db2acc3a06d599db1367ecb27"
+    },
+    {
+      "file": "public/haber-1554907529989808.html",
+      "sha": "b5469a9c9f0cc93d94ebdf24eb44b6aafe41fd5e"
+    },
+    {
+      "file": "public/haber-1554913486655879.html",
+      "sha": "fa57fa70b945c38e0bb277726752cbb148500626"
+    },
+    {
+      "file": "public/haber-1554919123321982.html",
+      "sha": "a72ab91a6146500c9877e27a983b15f3f8b3cd1b"
+    },
+    {
+      "file": "public/haber-1554921816655046.html",
+      "sha": "457877eca7dce25b0a9ba32de1bf736a52d41791"
+    },
+    {
+      "file": "public/haber-1554943193319575.html",
+      "sha": "bedddb5f3e96d511c400cb049d7b9865f395fdcd"
+    },
+    {
+      "file": "public/haber-1554955703318324.html",
+      "sha": "5e564f5ee235a0f517c10b99d2c9624e4c43b854"
+    },
+    {
+      "file": "public/haber-1554972813316613.html",
+      "sha": "967a9b89e092268d2705be261f544285259b37c2"
+    },
+    {
+      "file": "public/haber-1554973083316586.html",
+      "sha": "0b075c5a4a01bf5812abc02a052b25af757a868a"
+    },
+    {
+      "file": "public/haber-1554993173314577.html",
+      "sha": "22d5ec408a9b1d56f9e338e10b2664d8a3914a7e"
+    },
+    {
+      "file": "public/haber-1555004516646776.html",
+      "sha": "d52e8a5989b5678ce227f81d61a541d3548cb2b8"
+    },
+    {
+      "file": "public/haber-1555018599978701.html",
+      "sha": "a9731e0222bfd4c5b48b4d67cae9d78870a6708f"
+    },
+    {
+      "file": "public/haber-1555049736642254.html",
+      "sha": "a673088b3109bc26e8ceb587d8d0a81a2334b0fb"
+    },
+    {
+      "file": "public/haber-1555067329973828.html",
+      "sha": "8481dbb64c45e465a804f4b288da8bb17d657813"
+    },
+    {
+      "file": "public/haber-1555078963305998.html",
+      "sha": "56e22e25625b0b8e5ac8b8cb589adf1ccea49c77"
+    },
+    {
+      "file": "public/haber-1555087039971857.html",
+      "sha": "32acded69744e01a5d3599dfc2b9d106fe5116e3"
+    },
+    {
+      "file": "public/haber-1555104589970102.html",
+      "sha": "61b922eb17577ed31d0a77ee013d593c02f6a83f"
+    },
+    {
+      "file": "public/haber-1555107746636453.html",
+      "sha": "a4cbdaf50fdc307aa3be3d545aab7a74569cea23"
+    },
+    {
+      "file": "public/haber-1555131419967419.html",
+      "sha": "019ef1aa50ce8ecd2eb0ce0b6dc9eaf2bfdc618c"
+    },
+    {
+      "file": "public/haber-1555394823274412.html",
+      "sha": "3fa4ff5437b9b9038f78f1278266173a85f6bb2e"
+    },
+    {
+      "file": "public/haber-1555441263269768.html",
+      "sha": "bdc2acb33e6c2a3668125625bd237eae1c09513a"
+    },
+    {
+      "file": "public/haber-1555656323248262.html",
+      "sha": "02fb962922d33dc55611d5cfe1d39f58afdda310"
+    },
+    {
+      "file": "public/haber-1555676906579537.html",
+      "sha": "d0219dfc3cfad7736be7075a854c63fb65374398"
+    },
+    {
+      "file": "public/haber-1555680959912465.html",
+      "sha": "c5a2da546a4a469994a1a5174f0b1fecf9cc9a6d"
+    },
+    {
+      "file": "public/haber-1555710206576207.html",
+      "sha": "c2059b95aac21c193e6271f0f8a952ac18385965"
+    },
+    {
+      "file": "public/haber-1555731666574061.html",
+      "sha": "452e18135278388dbebeefc8f5709879e9fc67ad"
+    },
+    {
+      "file": "public/haber-1555758936571334.html",
+      "sha": "b4b94f1221ba9ff6bd7c336ba50f4a3a45d5a1c8"
+    },
+    {
+      "file": "public/haber-1555761493237745.html",
+      "sha": "2c2bc89428a175967c9bc1a8ede9292e5faa4e56"
+    },
+    {
+      "file": "public/haber-1555784046568823.html",
+      "sha": "16d43269e9e4809ae6f889b13cf3f0a1fbfbe519"
+    },
+    {
+      "file": "public/haber-1555839916563236.html",
+      "sha": "285846c384ce7094b6702f7759ce6c7cde155207"
+    },
+    {
+      "file": "public/haber-1555856399894921.html",
+      "sha": "659e93e870d185d0d539856c247ec48a185112fd"
+    },
+    {
+      "file": "public/haber-1555868299893731.html",
+      "sha": "28574bf10f7b20ed747886fb6a6f5dd1c2b895eb"
+    },
+    {
+      "file": "public/haber-1555895129891048.html",
+      "sha": "5b0c02e718a0206a6e02f6aef5e92b7bdd9c6647"
+    },
+    {
+      "file": "public/haber-1555923036554924.html",
+      "sha": "391a8f28049592a3bdbccb3e57c28839b83c4e3b"
+    },
+    {
+      "file": "public/haber-1555954393218455.html",
+      "sha": "ec3ec7b2253772970797e6e8a831a4a4613fdb36"
+    },
+    {
+      "file": "public/haber-1555959263217968.html",
+      "sha": "6f6c5d55c7640fba276d1e713d71d443c171e5fc"
+    },
+    {
+      "file": "public/haber-1555968179883743.html",
+      "sha": "0e29d474916972f675759025bf9af238a11798c8"
+    },
+    {
+      "file": "public/haber-1555974813216413.html",
+      "sha": "5274d65e8f00be0ee76c394f8370aa1e56267cf6"
+    },
+    {
+      "file": "public/haber-1555987246548503.html",
+      "sha": "8b0a97aa67c055375ea30bd633e74b8f03063cbb"
+    },
+    {
+      "file": "public/haber-1556031203210774.html",
+      "sha": "6b7911045511ee602be2bd81dd3228dfad2d5473"
+    },
+    {
+      "file": "public/haber-1556057519874809.html",
+      "sha": "f14b24b2df90ac9d5be7b153dbad364b7edd775b"
+    },
+    {
+      "file": "public/haber-1556069126540315.html",
+      "sha": "f712344301f6ac89bc197ee8a51ea8576aee74d1"
+    },
+    {
+      "file": "public/haber-1556102086537019.html",
+      "sha": "2b26f377f47d33e80ad8e551213aa73cfd91da92"
+    },
+    {
+      "file": "public/haber-1556127193201175.html",
+      "sha": "56d47dd1854c3c5ddfdb76fa8804fdf9edfaa785"
+    },
+    {
+      "file": "public/haber-1556143029866258.html",
+      "sha": "9e72558c57002f5810c17ebe16dab04934ca9121"
+    },
+    {
+      "file": "public/haber-1556149549865606.html",
+      "sha": "53d743e054cffff7acd79507955e4836ab4a7242"
+    },
+    {
+      "file": "public/haber-1556157916531436.html",
+      "sha": "a4d16bb7907c14b3bdd30ccd3018e80edd9c4ab2"
+    },
+    {
+      "file": "public/haber-1556214089859152.html",
+      "sha": "326c41c47145bdcce38878dcfc2144bb8da99b5f"
+    },
+    {
+      "file": "public/haber-1556605996486628.html",
+      "sha": "2f3bbf0678a90bf00c977196ee17f5037fa6d3ba"
+    },
+    {
+      "file": "public/haber-1556615703152324.html",
+      "sha": "2e4e5d69c9199d5bf1540c3f43f03b7766abdd85"
+    },
+    {
+      "file": "public/haber-1556630446484183.html",
+      "sha": "ce1f9ddcf8ad6e88732470e2d1bdbe443bd8b665"
+    },
+    {
+      "file": "public/haber-1556640149816546.html",
+      "sha": "caa437b737ea5b134ac6b28b7769ad1aaa0d5cff"
+    },
+    {
+      "file": "public/haber-1556654543148440.html",
+      "sha": "792af1e5d3cee3ce9675b0bf9eae238782a06fdd"
+    },
+    {
+      "file": "public/haber-1556663736480854.html",
+      "sha": "d1123b5ebc8a1a83913526a63ccdc8dbc85caf6c"
+    },
+    {
+      "file": "public/haber-1556695926477635.html",
+      "sha": "20fa87d4ee5a444875836574b7d6981530839894"
+    },
+    {
+      "file": "public/haber-1556703486476879.html",
+      "sha": "9432a5a54e4eaae93dec14298f197351b20c580d"
+    },
+    {
+      "file": "public/haber-1556717439808817.html",
+      "sha": "568d422ac487dc97bcc216244542444bf3910efd"
+    },
+    {
+      "file": "public/haber-1556726679807893.html",
+      "sha": "b4a95e711cf707ba3a253859399bb5e0282fa0af"
+    },
+    {
+      "file": "public/haber-1556742996472928.html",
+      "sha": "6e353826dbd61466385e7ad176dfab0856624a40"
+    },
+    {
+      "file": "public/haber-1556751693138725.html",
+      "sha": "632ffd29bf24977cc56ec787a20247670e0e3a3f"
+    },
+    {
+      "file": "public/haber-1556766686470559.html",
+      "sha": "6950a1e833b63bc8a28e9fdcadc304d3aec62a80"
+    },
+    {
+      "file": "public/haber-1556768666470361.html",
+      "sha": "6d9f019c8cdd886148fb66032746393f862f0035"
+    },
+    {
+      "file": "public/haber-1556788976468330.html",
+      "sha": "18377c46eb6182301d5fb0bb61a60a773990e988"
+    },
+    {
+      "file": "public/haber-1556792486467979.html",
+      "sha": "55893b5a54d15455ec9948e5be6fb100e781532f"
+    },
+    {
+      "file": "public/haber-1556813196465908.html",
+      "sha": "3bcbe4f2038ef7670063aef85cd9ff6def87f137"
+    },
+    {
+      "file": "public/haber-1556834123130482.html",
+      "sha": "eb2eca1e9fb68a90ca07b5136adff3cc59b3c7fe"
+    },
+    {
+      "file": "public/haber-1556837779796783.html",
+      "sha": "44d4df9b8234698677b76a29ba1c4ef7de4edf6a"
+    },
+    {
+      "file": "public/haber-1556876086459619.html",
+      "sha": "d17e1ddb104b6cdae834d81e8268f8a87cb77d2d"
+    },
+    {
+      "file": "public/haber-1556898039790757.html",
+      "sha": "75715515e2d505e0b50ab1c4c771f269928072a9"
+    },
+    {
+      "file": "public/haber-1556899693123925.html",
+      "sha": "de1d66b20a944e791ac0192a0bcbe7336290ff42"
+    },
+    {
+      "file": "public/haber-1556932306453997.html",
+      "sha": "dab97c2846beb6392fc524e5a5236fffc1b00112"
+    },
+    {
+      "file": "public/haber-1556992679781293.html",
+      "sha": "e3ccc5383958ac100ef18877f1b0134097c6cec1"
+    },
+    {
+      "file": "public/haber-1557142343099660.html",
+      "sha": "1bdfd060be308d699b3054f30219aa76e5db30a5"
+    },
+    {
+      "file": "public/haber-1557168866430341.html",
+      "sha": "f6c418c7d72c0fe3ad0967ca137f388b389eaed7"
+    },
+    {
+      "file": "public/haber-1557266826420545.html",
+      "sha": "21349ce3d3a704b2c705d75c828333af711550cd"
+    },
+    {
+      "file": "public/haber-1557295356417692.html",
+      "sha": "54da269e82f11fe4af2190dedb5ce98ecc847470"
+    },
+    {
+      "file": "public/haber-1557333826413845.html",
+      "sha": "74c05c4f8ece0022ffa1a697b8ee52661c58feac"
+    },
+    {
+      "file": "public/haber-1557359359744625.html",
+      "sha": "51ac9a3884287c547b3b90839ff8732abb554a16"
+    },
+    {
+      "file": "public/haber-1557367826410445.html",
+      "sha": "635d1f485c3fdd2a51acebd908d7fbbcf70a5009"
+    },
+    {
+      "file": "public/haber-1557382013075693.html",
+      "sha": "0230214d75f335d26b285119e1af0819619fdd0a"
+    },
+    {
+      "file": "public/haber-1557416209738940.html",
+      "sha": "f25f82002fe3bf94f63626a63692584b05bb0e8b"
+    },
+    {
+      "file": "public/haber-1557454223068472.html",
+      "sha": "5edf56ae49ff72bcf67494206ec58e278a0266a5"
+    },
+    {
+      "file": "public/haber-1557454366401791.html",
+      "sha": "da350a6d905543966729af4bd68c0722983cdb04"
+    },
+    {
+      "file": "public/haber-1557548896392338.html",
+      "sha": "f0a3882cd8268a67635035fbc523c803d3d0cfad"
+    },
+    {
+      "file": "public/haber-1557577936389434.html",
+      "sha": "21ee1830641d8d764c7213cf8fde4988ee354929"
+    },
+    {
+      "file": "public/haber-1557799566367271.html",
+      "sha": "11e21797d0362209e9ed16384ca24c07516c6a2f"
+    },
+    {
+      "file": "public/haber-1557854146361813.html",
+      "sha": "3c47c2a473c0631a63fb9d8a23800c99cb9db4ae"
+    },
+    {
+      "file": "public/haber-1557880059692555.html",
+      "sha": "734e67c47689a9d72111b69b992ce4cbb8767c8e"
+    },
+    {
+      "file": "public/haber-1557903049690256.html",
+      "sha": "452cf8892355aac4c8ccef707636635b109b0c9e"
+    },
+    {
+      "file": "public/haber-1557922819688279.html",
+      "sha": "ff4474b76d82c6342957dcf73231e5b0452962f2"
+    },
+    {
+      "file": "public/index.html",
+      "sha": "e0e970c6af14dcc14ad031d5e3de5510c2ddbb39"
+    },
+    {
+      "file": "public/kategori/dunya/index.html",
+      "sha": "544ef498608b78bded9c82aa06152215b96371c5"
+    },
+    {
+      "file": "public/kategori/ekonomi/index.html",
+      "sha": "b3b8adbde85163b20bce8cd39a13cb165c9e8883"
+    },
+    {
+      "file": "public/kategori/gundem/index.html",
+      "sha": "5f6b699f0cbeffe5d4cd589f40faca0287794a0f"
+    },
+    {
+      "file": "public/kategori/magazin/index.html",
+      "sha": "6612c381dd5d4beb4540f5fe16ed06d24137008a"
+    },
+    {
+      "file": "public/kategori/siyaset/index.html",
+      "sha": "5768a738c9035f5e2941a7711e1b596d99514e0f"
+    },
+    {
+      "file": "public/kategori/spor/index.html",
+      "sha": "ed459056de4cfe775e7f33b26a798d04e7687200"
+    },
+    {
+      "file": "public/kategori/teknoloji/index.html",
+      "sha": "9816b44533eb9a2a861eca7429bc3c48f6c62a21"
+    },
+    {
+      "file": "public/kategori/yasam/index.html",
+      "sha": "12fcd860fde66ff838ff60d7aa175d041aa8d768"
+    },
+    {
+      "file": "public/son-haberler/index.html",
+      "sha": "97f4b6ebc09d533c224865408b59b9e1e1951ce3"
+    },
+    {
+      "file": "requirements.txt",
+      "sha": "f23440c26359c347341364062ad25c0deb92beb5"
+    },
+    {
+      "file": "vercel.json",
+      "sha": "ed144feb1095528c58952a01e1ecbbcec9258125"
+    }
+  ]
+}
