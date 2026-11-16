@@ -1,0 +1,29 @@
+name: Transfer actual ChatGPT artwork to GitHub
+on:
+  push:
+    branches: [main]
+    paths:
+      - integration/transfer_chatgpt_via_canva.py
+      - .github/workflows/transfer-chatgpt-art.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - run: python3 -m pip install Pillow==12.1.1
+      - name: Transfer image pixels from Canva to GitHub
+        run: python3 integration/transfer_chatgpt_via_canva.py
+      - name: Commit imported JPEG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public-media/chatgpt-original-weather-transfer-test.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m "Transfer real ChatGPT-generated image to public GitHub media"
+            git push
+          fi
