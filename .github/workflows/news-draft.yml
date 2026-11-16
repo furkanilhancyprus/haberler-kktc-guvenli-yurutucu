@@ -7,8 +7,6 @@ on:
         description: Reviewed news ID
         required: true
         default: kktc-meteoroloji-17-23-kasim-2026
-  schedule:
-    - cron: '30 * * * *'
 
 permissions:
   contents: read
@@ -19,7 +17,6 @@ concurrency:
 
 jobs:
   prepare:
-    if: github.event_name == 'workflow_dispatch' || vars.NEWS_DRAFT_PREPARATION_ENABLED == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 4
     steps:

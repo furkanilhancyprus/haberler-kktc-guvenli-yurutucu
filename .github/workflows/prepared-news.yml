@@ -1,0 +1,68 @@
+name: Haberler KKTC prepared package
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'news/inbox/*/manifest.json'
+      - 'prepared_news.py'
+      - 'test_prepared_news.py'
+      - '.github/workflows/prepared-news.yml'
+  pull_request:
+    paths:
+      - 'prepared_news.py'
+      - 'test_prepared_news.py'
+      - '.github/workflows/prepared-news.yml'
+  workflow_dispatch:
+    inputs:
+      news_id:
+        description: Optional prepared package ID
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Test package handling and replay protection
+        run: |
+          python3 -m pip install --disable-pip-version-check Pillow==12.1.1
+          python3 -m unittest -v test_prepared_news
+          python3 prepared_news.py --validate-only --news-id kktc-secim-227642-secmen-998-sandik-20261116
+
+  draft:
+    needs: verify
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.METRICOOL_DRAFT_ENABLED == 'true'
+    concurrency:
+      group: haberler-kktc-prepared-draft
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Install JPEG dependency
+        run: python3 -m pip install --disable-pip-version-check Pillow==12.1.1
+      - name: Deliver prepared JPEG and caption as a draft
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          MEDIA_API_TOKEN: ${{ secrets.MEDIA_API_TOKEN }}
+          METRICOOL_API_TOKEN: ${{ secrets.METRICOOL_API_TOKEN }}
+          METRICOOL_USER_ID: ${{ vars.METRICOOL_USER_ID }}
+          NEWS_ID: ${{ inputs.news_id }}
+        run: |
+          if [ -n "$NEWS_ID" ]; then
+            python3 prepared_news.py --news-id "$NEWS_ID"
+          else
+            python3 prepared_news.py
+          fi
