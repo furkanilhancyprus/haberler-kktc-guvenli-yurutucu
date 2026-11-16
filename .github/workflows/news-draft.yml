@@ -1,0 +1,42 @@
+name: Haberler KKTC real news draft
+
+on:
+  workflow_dispatch:
+    inputs:
+      news_id:
+        description: Reviewed news ID
+        required: true
+        default: kktc-meteoroloji-17-23-kasim-2026
+  schedule:
+    - cron: '30 * * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: haberler-kktc-media-runner
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    if: github.event_name == 'workflow_dispatch' || vars.NEWS_DRAFT_PREPARATION_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Install image dependency
+        run: python3 -m pip install --disable-pip-version-check Pillow==12.1.1
+      - name: Prepare and verify the Blob handoff
+        env:
+          MEDIA_API_TOKEN: ${{ secrets.MEDIA_API_TOKEN }}
+          NEWS_ID: ${{ inputs.news_id }}
+        run: python3 news_pipeline.py --news-id "$NEWS_ID" --upload
+      - name: Store verified handoff
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: news-handoff
+          path: news-handoff/
+          if-no-files-found: ignore
+          retention-days: 2

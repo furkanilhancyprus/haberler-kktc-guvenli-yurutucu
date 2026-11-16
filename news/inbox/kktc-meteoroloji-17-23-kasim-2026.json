@@ -1,0 +1,17 @@
+{
+  "newsId": "kktc-meteoroloji-17-23-kasim-2026",
+  "verified": true,
+  "publishedAt": "2026-11-16T15:29:00+02:00",
+  "headline": "Salı yağmur, çarşamba Karpaz’da yağış",
+  "subhead": "METEOROLOJİ 17–23 KASIM’I AÇIKLADI",
+  "illustration": "weather",
+  "paragraphs": [
+    "Meteoroloji Dairesi’nin 17–23 Kasım tahminine göre, KKTC’de 17 Kasım Salı günü öğle saatlerinde bazı bölgelerde yağmur bekleniyor.",
+    "18 Kasım Çarşamba günü bulutlanma artacak. Yer yer yağmur beklenen bölge Karpaz. Perşembe günü ise bulutluluğun azalacağı öngörülüyor.",
+    "Daire, en yüksek sıcaklıkların iç kesimlerde 24–27, sahillerde 22–25 ve dağlık bölgelerde 17–20 derece aralığında olacağını tahmin ediyor."
+  ],
+  "sources": [
+    {"name": "Radyo Güven / TAK", "url": "https://radyoguven.gov.ct.tr/Sayfa/HaberDetay/15698"},
+    {"name": "MYK Haber", "url": "https://www.mykibris.com/kktc/haber/yer-yer-yagmur-bekleniyor-77287"}
+  ]
+}
