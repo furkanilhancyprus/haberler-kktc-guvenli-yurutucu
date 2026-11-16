@@ -71,12 +71,12 @@ def source_host(value):
 
 
 def remove_metadata(raw):
-    with Image.open(io.BytesIO(raw), formats=["JPEG"]) as image:
-        if image.size != SIZE or image.getexif().get(274, 1) != 1:
+    with Image.open(io.BytesIO(raw), formats=["JPEG", "PNG"]) as image:
+        if (image.size != SIZE and image.format != "PNG") or image.getexif().get(274, 1) != 1:
             raise TransferError("INVALID_JPEG_SIZE_OR_ORIENTATION")
         # A new RGB image carries pixels only, including when the input has EXIF/XMP/ICC.
         clean = Image.new("RGB", SIZE)
-        clean.paste(image.convert("RGB"))
+        clean.paste(image.convert("RGB").resize(SIZE, Image.Resampling.LANCZOS))
     stream = io.BytesIO()
     clean.save(stream, "JPEG", quality=94, optimize=True)
     data = stream.getvalue()
@@ -104,7 +104,7 @@ def load_package(path, now, *, recovering=False, allow_probe=False):
             or packet.get("imageRightsVerified") is not True):
         raise TransferError("MISSING_EDITORIAL_VERIFICATION")
     if (packet["timezone"] != ZONE or not packet["headline"].strip()
-            or packet["imagePath"] not in {"image.jpg", str(path.parent / "image.jpg")}):
+            or packet["imagePath"] not in {"image.jpg", "image.png", str(path.parent / "image.jpg"), str(path.parent / "image.png")}):
         raise TransferError("MISSING_EDITORIAL_VERIFICATION")
     urls = packet["sourceUrls"]
     if not isinstance(urls, list) or not 2 <= len(urls) <= 10 or len({source_host(url) for url in urls}) < 2:
@@ -123,7 +123,7 @@ def load_package(path, now, *, recovering=False, allow_probe=False):
         raw = base64.b64decode(packet["imageBase64"], validate=True)
         caption = packet["postText"].strip()
     else:
-        image_path = path.with_name("image.jpg")
+        image_path = path.with_name("image.png" if packet["imagePath"].endswith(".png") else "image.jpg")
         post_path = path.with_name("post.txt")
         if packet["postPath"] not in {"post.txt", str(post_path)}:
             raise TransferError("INVALID_POST_PATH")
