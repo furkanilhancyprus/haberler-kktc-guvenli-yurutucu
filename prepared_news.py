@@ -238,8 +238,8 @@ def post_body(caption, date, media):
         "providers": [{"network": "facebook"}],
         "facebookData": {"type": "POST"},
         "publicationDate": {"dateTime": local_time(date), "timezone": ZONE},
-        "autoPublish": False,
-        "draft": True,
+        "autoPublish": True,
+        "draft": False,
     }
 
 
@@ -280,7 +280,7 @@ def deliver(path, validate_only, state=None, sha=None, *, allow_probe=False):
         media = None if existing_id else normalized_media(clean, news_id, token, user_id, media_token)
         if not existing_id and requested < datetime.now(UTC) + timedelta(minutes=1):
             raise TransferError("PUBLICATION_TIME_EXPIRED")
-        state = {"newsId": news_id, "status": "draft_pending", "packageSha256": fingerprint,
+        state = {"newsId": news_id, "status": "schedule_pending", "packageSha256": fingerprint,
                  "requestedDate": requested.isoformat(), "workflowRunId": os.environ.get("GITHUB_RUN_ID"),
                  "metricoolMediaUrl": media}
         if existing_id:
@@ -301,18 +301,18 @@ def deliver(path, validate_only, state=None, sha=None, *, allow_probe=False):
     attached = post.get("media")
     publication = post.get("publicationDate", {})
     if (str(post_id(post)) != str(existing_id) or post.get("text", "").strip() != caption
-            or post.get("draft") is not True or post.get("autoPublish") is not False
+            or post.get("draft") is not False or post.get("autoPublish") is not True
             or [row.get("network") for row in post.get("providers", [])] != ["facebook"]
             or post.get("facebookData", {}).get("type") != "POST"
             or publication.get("timezone") != ZONE or publication.get("dateTime") != local_time(requested)
             or not isinstance(attached, list) or len(attached) != 1
             or (state.get("metricoolMediaUrl") and attached[0] != state["metricoolMediaUrl"])):
-        raise TransferError("METRICOOL_DRAFT_READBACK_MISMATCH")
+        raise TransferError("METRICOOL_SCHEDULE_READBACK_MISMATCH")
     if not state.get("metricoolMediaUrl"):
         # A pre-existing planner entry was never created by this package.
         raise TransferError("EXISTING_DRAFT_REQUIRES_MANUAL_MATCH")
     metricool_jpeg(attached[0], clean)
-    state.update(status="draft_verified", publicationDate=publication, draft=True, autoPublish=False,
+    state.update(status="scheduled_verified", publicationDate=publication, draft=False, autoPublish=True,
                  dimensions=list(SIZE), metadataClean=True,
                  metricoolPostUrl=f"https://app.metricool.com/planner/calendar?blogId={BRAND}")
     if str(post.get("uuid", "")).isascii() and re.fullmatch(r"[a-zA-Z0-9-]+", str(post.get("uuid", ""))):
@@ -342,7 +342,7 @@ def main():
             state, sha = None, None
             if not args.validate_only and SLUG.fullmatch(path.parent.name):
                 state, sha = github_state(path.parent.name)
-                if state and state.get("status") != "draft_pending":
+                if state and state.get("status") not in {"draft_pending", "schedule_pending"}:
                     print(json.dumps({"newsId": path.parent.name, "status": "already_recorded"}))
                     continue
             print(json.dumps(deliver(path, args.validate_only, state, sha, allow_probe=allow_probe), ensure_ascii=False))
