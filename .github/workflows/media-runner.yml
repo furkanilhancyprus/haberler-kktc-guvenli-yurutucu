@@ -2,6 +2,9 @@ name: Haberler KKTC media runner
 
 on:
   workflow_dispatch:
+  push:
+    branches: ['test/live-media-20261116']
+    paths: ['.github/workflows/media-runner.yml']
   schedule:
     - cron: '30 * * * *'
 
@@ -14,7 +17,7 @@ concurrency:
 
 jobs:
   verify:
-    if: github.event_name == 'workflow_dispatch' || vars.MEDIA_RUNNER_HOURLY_CHECK == 'true'
+    if: (github.event_name == 'workflow_dispatch' || github.event_name == 'push') || vars.MEDIA_RUNNER_HOURLY_CHECK == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
@@ -22,7 +25,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Verify live upload
-        if: github.event_name == 'workflow_dispatch'
+        if: (github.event_name == 'workflow_dispatch' || github.event_name == 'push')
         env:
           MEDIA_API_TOKEN: ${{ secrets.MEDIA_API_TOKEN }}
         run: python3 verify_media.py
@@ -31,3 +34,4 @@ jobs:
         env:
           MEDIA_API_TOKEN: ${{ secrets.MEDIA_API_TOKEN }}
         run: python3 verify_media.py --check-only
+
