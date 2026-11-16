@@ -7,5 +7,7 @@
   "draft": true,
   "autoPublish": false,
   "metricoolPostId": 430634577,
-  "metricoolMediaUrl": "https://static.metricool.com/planner/202611/7549135-file-5260597877314466281.jpeg"
+  "metricoolMediaUrl": "https://static.metricool.com/planner/202611/7549135-file-5260597877314466281.jpeg",
+  "testBlobDeleted": true,
+  "metricoolCopyVerifiedAfterDeletion": true
 }
