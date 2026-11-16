@@ -1,0 +1,23 @@
+{
+  "newsId": "kktc-secim-227642-secmen-998-sandik-20261116",
+  "verified": true,
+  "publishedAt": "2026-11-16T15:38:00+02:00",
+  "headline": "6 Aralık'ta 227 bin 642 seçmen!",
+  "subhead": "998 SANDIK KURULACAK",
+  "illustration": "election",
+  "paragraphs": [
+    "KKTC'de 6 Aralık 2026 seçimleri öncesinde seçmen ve sandık sayıları açıklandı.",
+    "Yüksek Mahkeme Başkanı Bertan Özerdağ'ın aktardığı bilgilere göre 227 bin 642 seçmen oy kullanabilecek.",
+    "Altı ilçede toplam 998 sandık kurulması planlanıyor. Seçmenlerin sandık bilgilerini resmî YSK duyurularından kontrol etmesi gerekiyor."
+  ],
+  "sources": [
+    {
+      "name": "TAK",
+      "url": "https://tak.gov.ct.tr/"
+    },
+    {
+      "name": "KKTC YSK",
+      "url": "https://ysk.mahkemeler.net/"
+    }
+  ]
+}
