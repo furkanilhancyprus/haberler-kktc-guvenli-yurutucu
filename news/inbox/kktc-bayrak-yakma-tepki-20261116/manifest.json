@@ -1,0 +1,25 @@
+{
+  "newsId": "kktc-bayrak-yakma-tepki-20261116",
+  "headline": "Güney Kıbrıs'ta bayrak yakılmasına KKTC'den tepki",
+  "publishedAt": "2026-11-16T17:40:57+02:00",
+  "publicationDate": "2026-11-17T00:20:00+02:00",
+  "sourceUrls": [
+    "https://radyoguven.gov.ct.tr/Sayfa/HaberDetay/15702",
+    "https://www.mykibris.com/kktc/haber/kktcden-bayrak-yakilmasina-tepki-zihniyet-degismiyor-77292"
+  ],
+  "imagePath": "image.png",
+  "postPath": "post.txt",
+  "imageSha256": "b580e3caf88ad1f4f8f5c9960cc2d710425f6c83995692db8e0e6840ee5a0a8d",
+  "timezone": "Asia/Famagusta",
+  "status": "ready",
+  "verified": true,
+  "imageRightsVerified": true,
+  "visualType": "AI_GENERATED_ILLUSTRATION",
+  "illustrationDisclosureRequired": true,
+  "metricoolBrandId": "7549135",
+  "providers": [
+    "facebook"
+  ],
+  "draft": false,
+  "autoPublish": true
+}
