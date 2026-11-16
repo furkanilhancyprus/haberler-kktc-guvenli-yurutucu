@@ -1,0 +1,26 @@
+{
+  "newsId": "kktc-secim-227642-secmen-998-sandik-20261116",
+  "headline": "6 Aralık'ta 227 bin 642 seçmen",
+  "publishedAt": "2026-11-16T15:55:00+02:00",
+  "sourceUrls": [
+    "https://www.mykibris.com/kktc/haber/ozerdag-secmen-ve-sandik-sayilarini-acikladi-77285",
+    "https://www.kibrispostasi.com/c35-KIBRIS_HABERLERI/n620063-ozerdag-6-aralik-secimlerinde-227-bin-642-secmen-oy-kullanacak-6-ilcede-998-sandik-kurulacak"
+  ],
+  "imagePath": "news/inbox/kktc-secim-227642-secmen-998-sandik-20261116/image.jpg",
+  "postPath": "news/inbox/kktc-secim-227642-secmen-998-sandik-20261116/post.txt",
+  "imageWidth": 1080,
+  "imageHeight": 1350,
+  "imageMetadataStripped": true,
+  "visualType": "AI_GENERATED_TEST_ILLUSTRATION",
+  "illustrationDisclosureRequired": true,
+  "timezone": "Asia/Famagusta",
+  "autoPublish": false,
+  "draft": true,
+  "status": "test_ready",
+  "metricoolBrandId": "7549135",
+  "providers": [
+    "facebook"
+  ],
+  "verification": "confirmed_public_sources",
+  "notes": "Technical pipeline test only; must NOT be published as an unlabeled real photo."
+}
