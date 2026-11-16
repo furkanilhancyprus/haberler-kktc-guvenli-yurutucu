@@ -36,11 +36,11 @@ jobs:
           python3 -m unittest -v test_prepared_news
           python3 prepared_news.py --validate-only --news-id kktc-secim-227642-secmen-998-sandik-20261116
 
-  draft:
+  publish:
     needs: verify
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.METRICOOL_DRAFT_ENABLED == 'true'
     concurrency:
-      group: haberler-kktc-prepared-draft
+      group: haberler-kktc-prepared-publish
       cancel-in-progress: false
     permissions:
       contents: write
@@ -53,7 +53,7 @@ jobs:
           persist-credentials: false
       - name: Install JPEG dependency
         run: python3 -m pip install --disable-pip-version-check Pillow==12.1.1
-      - name: Deliver prepared JPEG and caption as a draft
+      - name: Deliver prepared JPEG and caption for automatic Facebook publication
         env:
           GITHUB_TOKEN: ${{ github.token }}
           MEDIA_API_TOKEN: ${{ secrets.MEDIA_API_TOKEN }}
