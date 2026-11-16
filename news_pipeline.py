@@ -94,7 +94,7 @@ def draw_text(draw, text, y, size, max_lines, color):
 def photo_background(item):
     reference = item.get("photo")
     if not reference:
-        if item.get("illustration") != "weather":
+        if item.get("illustration") not in ("weather", "election"):
             raise ValueError("NO_VERIFIED_VISUAL")
         return None
     if reference.get("rightsVerified") is not True or not reference.get("credit"):
@@ -118,10 +118,18 @@ def render(item):
     if photo is not None:
         graphic.paste(photo, ((1080 - photo.width) // 2, (720 - photo.height) // 2))
     else:
-        for bounds in [(225, 330, 540, 562), (383, 248, 676, 572), (580, 337, 865, 562)]:
-            d.ellipse(bounds, fill="#232c43")
-        for x in range(320, 795, 90):
-            d.line((x, 585, x - 38, 670), fill="#54baff", width=13)
+        if item.get("illustration") == "election":
+            d.rounded_rectangle((245, 210, 835, 575), radius=18, fill="#d8e2ef", outline="#f6f6f6", width=8)
+            d.rectangle((275, 325, 805, 552), fill="#6d778e")
+            d.rectangle((390, 200, 700, 230), fill="#ffffff")
+            d.text((400, 250), "SECIM SANDIGI", font=font(39), fill="#222b42")
+            for x in range(330, 720, 125):
+                d.polygon([(x, 340), (x+105, 310), (x+110, 375), (x+5, 403)], fill="#f7f7f7")
+        else:
+            for bounds in [(225, 330, 540, 562), (383, 248, 676, 572), (580, 337, 865, 562)]:
+                d.ellipse(bounds, fill="#232c43")
+            for x in range(320, 795, 90):
+                d.line((x, 585, x - 38, 670), fill="#54baff", width=13)
         d.text((65, 690), "TEMSİLİ İLLÜSTRASYON", font=font(25), fill="#e5efff")
     d.polygon([(38, 62), (481, 49), (462, 71), (507, 93), (476, 110), (489, 151),
                (51, 160), (72, 139), (22, 127), (48, 102)], fill="#d11731")
