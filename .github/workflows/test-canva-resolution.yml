@@ -1,0 +1,15 @@
+name: Test Canva full resolution access
+on:
+  push:
+    branches: [main]
+    paths: [integration/test_canva_resolution.py]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install Pillow
+      - run: python integration/test_canva_resolution.py
