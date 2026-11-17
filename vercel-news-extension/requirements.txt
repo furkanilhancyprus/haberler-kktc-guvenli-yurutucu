@@ -1,0 +1,5 @@
+Pillow==12.1.1
+vercel-blob==0.5.1
+tzdata>=2026.1,<2027
+cryptography>=46,<48
+
