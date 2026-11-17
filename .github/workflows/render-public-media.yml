@@ -5,6 +5,7 @@ on:
     paths:
       - 'integration/weather_render.py'
       - 'integration/fed-ai-risk-20261117-0025.py'
+      - 'integration/kerch-bridge-20261117-1115.py'
       - '.github/workflows/render-public-media.yml'
   workflow_dispatch:
 permissions:
@@ -22,11 +23,13 @@ jobs:
         run: python3 integration/weather_render.py
       - name: Render Fed AI news image
         run: python3 integration/fed-ai-risk-20261117-0025.py
+      - name: Render Kerch bridge news image
+        run: python3 integration/kerch-bridge-20261117-1115.py
       - name: Commit generated image
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public-media/weather-20261117.jpg public-media/fed-ai-risk-20261117-0025.jpg
+          git add public-media/weather-20261117.jpg public-media/fed-ai-risk-20261117-0025.jpg public-media/kerch-bridge-20261117-1115.jpg
           if ! git diff --cached --quiet; then
             git commit -m "Render public JPEG for Metricool"
             git push
