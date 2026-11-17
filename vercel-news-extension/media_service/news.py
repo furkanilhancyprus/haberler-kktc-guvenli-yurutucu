@@ -2,12 +2,14 @@ import hashlib
 import json
 import os
 import re
-from urllib.parse import urlsplit, urlunsplit
+from urllib.error import HTTPError, URLError
+from urllib.parse import urlencode, urlsplit, urlunsplit
+from urllib.request import Request, build_opener
 
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 from .images import verify_jpeg
-from .providers import Failure, config, image_available, parse_json
+from .providers import Failure, NoRedirect, config, image_available, parse_json, retry
 from .service import encode, now
 from .store import Store
 
@@ -71,9 +73,41 @@ def validate(data):
             "media_url": media_url(data.get("media_url"))}
 
 
+class NewsStore(Store):
+    def put(self, path, data, mime, etag=None):
+        if not etag:
+            return super().put(path, data, mime)
+        # vercel-blob 0.5.1 exposes if_match for copy/delete but not put.
+        # Use the Blob SDK's PUT protocol for the two conditional news writes.
+        request = Request("https://vercel.com/api/blob?" + urlencode({"pathname": path}), data=data,
+                          method="PUT", headers={"Authorization": "Bearer " + config("BLOB_READ_WRITE_TOKEN"),
+                          "Content-Type": mime, "x-content-type": mime, "x-api-version": "12",
+                          "x-vercel-blob-access": "public", "x-allow-overwrite": "1",
+                          "x-add-random-suffix": "0", "x-cache-control-max-age": "60", "x-if-match": etag})
+
+        def write():
+            try:
+                with build_opener(NoRedirect()).open(request, timeout=10) as response:
+                    if response.status not in (200, 201):
+                        raise Failure("NEWS_BLOB_WRITE_FAILED")
+            except HTTPError as error:
+                with error:
+                    if error.code == 412:
+                        raise Failure("BLOB_CONFLICT", 409) from None
+                    raise Failure("NEWS_BLOB_WRITE_FAILED", transient=error.code in (408, 429, 500, 502, 503, 504)) from None
+            except (URLError, OSError, TimeoutError):
+                raise Failure("NEWS_BLOB_WRITE_CONNECTION", transient=True) from None
+
+        try:
+            retry(write)
+        except Failure as error:
+            if error.code != "BLOB_CONFLICT" or self.read(path)[0] != data:
+                raise
+
+
 class News:
     def __init__(self, store=None, fetch=None, production=None):
-        self.store = store if store is not None else Store()
+        self.store = store if store is not None else NewsStore()
         self.fetch = fetch or image_available
         self.production = (os.environ.get("VERCEL_ENV") == "production") if production is None else production
         self.root = "haberler-kktc-news/v1/" + ("live/" if self.production else "preview/")
