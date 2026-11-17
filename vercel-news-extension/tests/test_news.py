@@ -1,11 +1,11 @@
 import io
 import os
 import unittest
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 from PIL import Image
 
-from media_service.news import BLOB_ORIGIN, News
+from media_service.news import BLOB_ORIGIN, News, NewsStore
 from media_service import news_page
 from media_service.providers import Failure
 
@@ -86,3 +86,16 @@ class NewsTests(unittest.TestCase):
         self.assertIn("https://preview.invalid/haber/hkk-technical-test", page)
         self.assertIn("noindex", page)
         self.assertNotIn("old article", page)
+
+    @patch.dict(os.environ, {"BLOB_READ_WRITE_TOKEN": "test-blob-token"})
+    @patch("media_service.news.build_opener")
+    def test_conditional_blob_update_supplies_the_destination_etag(self, opener):
+        response = MagicMock()
+        response.__enter__.return_value.status = 200
+        transport = opener.return_value
+        transport.open.return_value = response
+        NewsStore().put("test/catalog.json", b"{}", "application/json", '"expected-etag"')
+        request = transport.open.call_args.args[0]
+        self.assertEqual(request.get_method(), "PUT")
+        self.assertEqual(request.get_header("X-if-match"), '"expected-etag"')
+        self.assertEqual(request.get_header("X-allow-overwrite"), "1")
