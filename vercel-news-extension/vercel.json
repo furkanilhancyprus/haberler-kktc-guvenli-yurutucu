@@ -1,0 +1,27 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "buildCommand": "node build-static.mjs",
+  "outputDirectory": "site-output",
+  "functions": {
+    "api/media.py": {"maxDuration": 60},
+    "api/news.py": {
+      "maxDuration": 60,
+      "includeFiles": "public/{index.html,son-haberler/index.html,kategori/*/index.html,haber-1558366206310607.html}"
+    }
+  },
+  "redirects": [
+    {"source": "/index.html", "destination": "/", "permanent": true},
+    {"source": "/son-haberler/index.html", "destination": "/son-haberler", "permanent": true},
+    {"source": "/kategori/:category/index.html", "destination": "/kategori/:category", "permanent": true}
+  ],
+  "rewrites": [
+    {"source": "/api/media/:operation", "destination": "/api/media?operation=:operation"},
+    {"source": "/api/news/:operation", "destination": "/api/news?view=:operation"},
+    {"source": "/haber/:external_id", "destination": "/api/news?view=article&external_id=:external_id"},
+    {"source": "/", "destination": "/api/news?view=home"},
+    {"source": "/son-haberler", "destination": "/api/news?view=archive"},
+    {"source": "/kategori/:category", "destination": "/api/news?view=category&category=:category"}
+  ]
+}
+
